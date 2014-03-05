@@ -114,7 +114,7 @@ a {
 }
 
 .container {
-  margin: 3% auto;
+  margin: 3% auto 0 auto;
   width:80%;
   height: 650px;
   background-color: white;
@@ -293,22 +293,6 @@ h1{
 	background: #d03e2f;
 }
 
-.bluebtn {
-	font-size: 60px;
-	color:white;
-	font-family: Arial,sans-serif;
-	font-weight: bold;
-	display: inline-block;
-	text-align: center;
-	padding: 10px;
-	border: 4px solid black;
-	border-radius: 4px;
-	width:350px;
-	margin: 40px auto 20px auto;
-	background: #2e8ece;
-	display: block;
-}
-
 .btncon {
 	text-align: center;
 	margin: 0 auto;
@@ -345,7 +329,8 @@ h1{
     margin-left: 55px;
     position: absolute;
     left:10%;
-    top:58%;
+    top:54%;
+    padding: 4px;
 }
 
 

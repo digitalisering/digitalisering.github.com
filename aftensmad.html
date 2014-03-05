@@ -24,6 +24,7 @@
 			var id = GetURLParameter('id');
 
 			$( document ).ready(function() {
+				$('.title').text("Aftensmad for " + beboere[id].navn);
 				$('.bigblue').attr('href','name.html?id=' + id);
 				$('#1').attr('href','aftensmadvalg.html?id=' + id + '&ret=1');				
 				$('#2').attr('href','aftensmadvalg.html?id=' + id + '&ret=2');
@@ -33,16 +34,19 @@
 	</head>
 	<body>
 	    <div class="container">
-				<script type="text/javascript">
-				if(beboere[id].aft=="none"){
-				document.write('<h1 class="title" id="mag">Aftensmad for ' + beboere[id].navn + '</h1><div id="mad"><div id="header"><h1 class="foodTitle">Hvad vil de gerne have at spise?</h1></div><div id="menu"><a id="1">Boller i karry</a><br /><a id="2">Tarteletter</a><br /><a id="3">Frikadeller</a></div></div>');
-				} else {
-					document.write('<h1 class="title">Du har allerede bestilt mad!</h1>');
-					document.write("<h2>Hvis du har ombestemt dig, så tryk på den blå knap nedunder</h2>");
-					document.write('<a class="bluebtn">VÆLG IGEN</a>');
-				}
-				</script>
+	    	<h1 class="title"></h1>
 
+			<div id="mad">
+				<div id="header">
+					<h1 class="foodTitle">Hvad vil de gerne have at spise?</h1>
+				</div>
+
+				<div id="menu">
+					<a id="1">Boller i karry</a><br />
+					<a id="2">Tarteletter</a><br />
+					<a id="3">Frikadeller</a>
+				</div>
+			</div>
 
 			<a class="bigblue" href="name.html">TILBAGE</a>
 		</div>
