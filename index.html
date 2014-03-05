@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Bogstav</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="db.js"></script>
+		<script type="text/javascript">
+		$( document ).ready(function() {
+			$("#slideshow > div:gt(0)").hide();
+				setInterval(function() { 
+				  $('#slideshow > div:first')
+				    .fadeOut(500)
+				    .next()
+				    .fadeIn(500)
+				    .end()
+				    .appendTo('#slideshow');
+				},  5000);
+		});
+		</script>
+	</head>
+
+	<body>
+	    <div class="container">
+	    	<h1 class="title" id="fpTitle">Lokalcenter Hørgården</h1>
+	    	<a href="chooseletter.html">
+	    		<div class="loginbtn">
+	    			LOG IND
+	    		</div>
+	    	</a>
+			<div id="birthday" class="angled-135 stripes">
+				<div id="birthTitle"><img src="flag.gif" width="35" height="24" /> Fødselsdage:</div>
+				<div class="birthItem">Aksel Bruun har fødselsdag på mandag!</div>
+				<div class="birthItem">Inge Bording Andersen har fødseldag om 3 uger!</div>
+				<div class="birthItem">Ingrid Ditlevsen har fødselsdag d. 23-03-2014!</div>
+			</div>
+			<div id="slideshow">
+   				<div>
+     				<img src="hoergaarden.jpg">
+   				</div>
+
+   				<div>
+   	 				<img src="hoergaarden2.jpg">
+   				</div>
+
+   				<div>
+   	 				<img src="hoergaarden3.jpg">
+   				</div>
+   			</div>
+   			<div id="tilmeldbox">
+   				Du skal logge ind, før du kan tilmelde dig arrangementer, vælge aftensmad osv.
+   			</div>
+   			<div id="finger">
+   				<img src="tryk.jpg" width="100" height="100" /> 
+   				<span>Du skal bruge din finger til at styre computeren</span>
+   			</div>
+		</div>
+	</body>
+</html>
