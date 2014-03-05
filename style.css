@@ -115,7 +115,7 @@ a {
 
 .container {
   margin: 3% auto 0 auto;
-  width:80%;
+  width:84%;
   height: 650px;
   background-color: white;
   border: 1px solid #bbbbbb;
@@ -343,7 +343,7 @@ h1{
     padding: 10px; 
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     display: inline-block;
-    right:13%;
+    right:11%;
     top:17%;
 }
 
