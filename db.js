@@ -7,6 +7,7 @@ var beboere = [
 	{ "navn":"Bodil Madsen","id":"5"},
 	{ "navn":"Dorte Mathiasen","id":"6"},
 	{ "navn":"Erik Jensen","id":"7"},
-	{ "navn":"Kirsten Rasmussen","id":"8"}
+	{ "navn":"Kirsten Rasmussen","id":"8"},
+	{ "navn":"Ingrid Ditlevsen","id":"9"}
 ]
 
